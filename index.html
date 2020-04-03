@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Todo</title>
+    </head>
+        <body>
+            <header>
+                <h1>toNote</h1>
+                <div onclick="mobileNav()" class="hamNav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
+            </header>
+            
+            <div id="popUpMessage" class="popUp-message">
+                <div class="content">
+                    <p id="message"></p>
+                    <span class="deletion-btns">
+                        <button id="confirmDeletion">YES</button>
+                        <button id="cancelDeletion">NO</button>
+                    </span>
+                </div>
+            </div>
+            <div class="main">
+                <!-- col 1 - Nav bar -->
+                <div class="nav-bar"> 
+                    <nav>
+                        <ul id="saved__notes">
+                            <!-- <li onmouseover="showDel()" onmouseout="hideDel()" >Hey<button class="move">X</button></li> -->
+                        </ul>
+                    </nav>
+                </div>
+    
+                <!-- col 2 -->
+                
+                <div class="todo">
+                    <button id="newNote" onclick="newNote()">New Note</button>
+                    <input id="note__title" value="" type="text" placeholder="Title">
+                    <textarea id="note__txtarea" value="" name="txtarea" id="" cols="30" rows="10"></textarea>
+                    <button id="save__btn" onclick="save__btn()">Save</button>
+                    <button id="add__btn" onclick="add__btn()">ADD</button>
+                </div>
+            </div>
+    
+    
+        <script src="script.js"></script>
+        </body>
+ 
+</html>
